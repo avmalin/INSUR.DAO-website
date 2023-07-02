@@ -8,12 +8,6 @@
     import Henry from './Elements/Henry.png'
     import {FeedbackCards} from './data'
     import QuoteIcon from './Elements/Site Icon 8.png'
-    let person = {
-      img:   {Henry},
-      name: 'Ploni Almoni',
-      role: 'Administrator',
-      inUrl:"https://google.com"
-    };
     
   </script>
   

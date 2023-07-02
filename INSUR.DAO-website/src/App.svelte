@@ -13,14 +13,23 @@
     <div style="display: flex;">
     <img style="width: 60px; height: 60px;" src={Logo} alt="logo"/>
     <h1 style="margin-top: 0;">INSUR·DAO</h1>
-    </div>  
-    <p class="navbar" style="margin-top: 50px;">Governace . Join the Community . Contact Us</p>
-    <div class = "header-icons" >
-      <div style="margin-top: 0px;">
-      <img  style= "margin-right:10px;" src={TwitterIcon} alt="twitter icon"/>
-      <img style= "margin-right:10px;" src={LinkedinIcon} alt ="linked icon"/>
-      <img style= "margin-right:10px;" src={DescordIcon} alt='descord icon'/>
     </div>
+    {#if window.innerWidth >= 1500}
+      <p class="navbar long-navbar" style="margin-top: 50px; z-index: 1;">Governace . Join the Community . Contact Us</p>  
+    {/if}  
+  
+    <div class = "header-icons" >
+      <div style="margin-top: -4px; z-index: 2;">
+        <a href="https://google.com" target="_blank" rel="noreferrer">
+          <img style= "margin-right:10px;"  src={TwitterIcon} alt="twitter icon"/>
+        </a>
+        <a href="https://google.com" target="_blank" rel="noreferrer">
+          <img style= "margin-right:10px; margin-bottom: 4px;" src={LinkedinIcon} alt ="linked icon"/>
+        </a>
+        <a href="https://google.com" target="_blank" rel="noreferrer">
+          <img style= "margin-right:10px; " src={DescordIcon} alt='descord icon'/>
+        </a>
+      </div>
     <div>
       <button class='beautiful-button' style="margin-left: 30px; ">Use App</button>
     </div>
@@ -68,5 +77,13 @@
       font-size: 20px;  
       width: 180px;
       
+  }
+  .long-navbar{
+    display: block;
+  }
+  @media (max-width: 1250px) {
+    .long-navbar {
+      display: none;
+    }
   }
 </style>
