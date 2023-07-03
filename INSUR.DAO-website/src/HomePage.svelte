@@ -115,7 +115,8 @@
     .my-gradiant-text{
       background: linear-gradient(to right, #0a75cc, #930bc9);
       background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
     }
     
     .button-container{      
@@ -152,6 +153,7 @@
     
     h1{
       margin-top: 150px;
+      color: #213547;
     }
     h2{
       font-size: 40px;
@@ -167,6 +169,7 @@
     h4{
       background: linear-gradient(to right, #0a75cc, #930bc9);
       background-clip: text;
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 30px;
       margin-bottom: -30px;
