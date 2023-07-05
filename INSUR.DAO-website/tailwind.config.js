@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    colorss:{
+      'linked-in': '#0177b5',
+    }
   },
   plugins: [],
 }

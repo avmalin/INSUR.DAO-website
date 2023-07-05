@@ -9,12 +9,12 @@
 </script>
 
 
-<dev class="card">
-    <img src={img} alt='{name} image'>
-    <h3 style="font-size: 30px;">{name}</h3>
-    <p style="font-size: 30px;">{role}</p>
+<dev class="flex flex-col justify-center items-center bg-white">
+    <img class="w-24 h-24"src={img} alt='{name} image'>
+    <p class="text-xl">{name}</p>
+    <p class="text-lg">{role}</p>
     <a href={inUrl} target="_blank" rel="noreferrer">
-            <img src={linkedInLogo} alt="linked in logo">
+            <img class="w-10 h-10 rounded-3xl p-1 bg-linked-in  "src={linkedInLogo} alt="linked in logo">
     </a>
 </dev>
     

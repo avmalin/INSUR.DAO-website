@@ -1,89 +1,71 @@
 <script>
-  import HomePage from './HomePage.svelte';
-  import Logo from './assets/svelte.svg'
-  import TwitterIcon from './Elements/Twitter Icon.png'
-  import LinkedinIcon from './Elements/Linked In Icon.png'
-  import DescordIcon from './Elements/Discord Icon.png'
-  
-  export let menu=1;
+  import HomePage from "./HomePage.svelte";
+  import Logo from "./assets/svelte.svg";
+  import TwitterIcon from "./Elements/Twitter Icon.png";
+  import LinkedinIcon from "./Elements/Linked In Icon.png";
+  import DescordIcon from "./Elements/Discord Icon.png";
+
+  export let menu = 1;
 </script>
-<main>
-<div id="navbar" class='navbar'>
-  <div class='header-main'>
-    <div style="display: flex;">
-    <img style="width: 60px; height: 60px;" src={Logo} alt="logo"/>
-    <h1 style="margin-top: 0;">INSUR·DAO</h1>
-    </div>
-    {#if window.innerWidth >= 1500}
-      <p class="navbar long-navbar" style="margin-top: 50px; z-index: 1;">Governace . Join the Community . Contact Us</p>  
-    {/if}  
-  
-    <div class = "header-icons" >
-      <div style="margin-top: -4px; z-index: 2;">
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img style= "margin-right:10px;"  src={TwitterIcon} alt="twitter icon"/>
-        </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img style= "margin-right:10px; margin-bottom: 4px;" src={LinkedinIcon} alt ="linked icon"/>
-        </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img style= "margin-right:10px; " src={DescordIcon} alt='descord icon'/>
-        </a>
+
+<main class="container mx-auto">
+  <div id="navbar" >
+    <div class="flex  justify-between items-center top-3 left-5 right-5 mx-5 absolute">
+      <div class="flex left-0">
+        <img class="w-10 h-10" src={Logo} alt="logo" />
+        <p class="text-1xl mt-2 ml-1">INSUR·DAO</p>
       </div>
-    <div>
-      <button class='beautiful-button' style="margin-left: 30px; ">Use App</button>
-    </div>
+      <p class="hidden lg:block mx-auto  text-center">
+        Governace . Join the Community . Contact Us
+      </p>
+      <div class="flex right-0">
+        <div class="hidden md:flex flex-row space-x-3">
+          <a href="https://google.com" target="_blank" rel="noreferrer">
+            <img class="w-10 h-10" src={TwitterIcon} alt="twitter icon" />
+          </a>
+          <a href="https://google.com" target="_blank" rel="noreferrer">
+            <img class="w-10 h-10" src={LinkedinIcon} alt="linked icon" />
+          </a>
+          <a href="https://google.com" target="_blank" rel="noreferrer">
+            <img class="w-10 h-10" src={DescordIcon} alt="descord icon" />
+          </a>
+        </div>
+        <div>
+          <button class="visible beautiful-button w-32 ml-8">Use App</button>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<div id="page">
-  {#if menu === 1}
-    <HomePage/>
-  {/if}
-</div>
-<div style="position: absolute; right: 0; left:0;  buttom:0;width: 100%;">
-  <div style="height: 3px; background-color: black;background:linear-gradient(to right, #0a75cc, #930bc9);"></div>
-  <div style="display: flex; flex-direction:row; margin-left: 300px; margin-top: 30px;">
-    <img style="width: 80px; height: 80px;" src={Logo} alt="logo"/>
-    <h1 style="margin-top: 20px;">INSUR·DAO</h1>
+  <div id="page" class="mt-14">
+    {#if menu === 1}
+      <HomePage />
+    {/if}
   </div>
-  <p>©2023 All Right Reserved. INSUR.DAO, Israel.</p>
-</div>
+  <div>
+    <div class="mt-20" style="background:linear-gradient(to right, #0a75cc, #930bc9);" />
+    <div class="flex flex-row place-content-center mr-14">
+      <img class="h-20 w-20" src={Logo} alt="logo" />
+      <p class="text-right text-3xl m-4">INSUR·DAO</p>
+    </div>
+    <p class="mt-4">©2023 All Right Reserved. INSUR.DAO, Israel.</p>
+  </div>
 </main>
+
 <style>
-  .navbar{
-    position: absolute;
-    top:0;
-    left: 0;
-    right:0;
-  
-  }
-  .header-main{
+  .header-main {
     display: flex;
     justify-content: space-between;
-    flex-direction:row;
+    flex-direction: row;
     margin-top: 30px;
   }
-  .header-icons{
+  .header-icons {
     height: 100px;
     display: flex;
     flex-direction: row;
     margin-right: 30px;
-    
   }
-  .beautiful-button{
-    color:aliceblue;
-      background: linear-gradient(to right, #0a75cc, #930bc9);
-      font-size: 20px;  
-      width: 180px;
-      
-  }
-  .long-navbar{
-    display: block;
-  }
-  @media (max-width: 1250px) {
-    .long-navbar {
-      display: none;
-    }
+  .beautiful-button {
+    color: aliceblue;
+    background: linear-gradient(to right, #0a75cc, #930bc9);
   }
 </style>

@@ -12,86 +12,91 @@
   </script>
   
   <main class="main-style">
-    <div style="position: absolute;top:100px; right: 0; left:0; buttom:0;width: 100%; background-color: black;background:linear-gradient(to right, #0a75cc, #930bc9);">
+    <div class="p-2.5 left-0 right-0 top-24 absolute" style="background:linear-gradient(to right, #0a75cc, #930bc9);">
       <p style="color:white;font-family: Didot, serif; ">Welcome to your Insurance Commuunity. Welcome to INSUR.DAO!</p>
     </div>
   
   
-    <h1>Empower your <span class="my-gradiant-text">Peer-to-Peer</span>  </h1>
-    <h1>protection business</h1>
-    <h2>INSU.DAO: the Decentralized Organization for the Benefit of P2P Associations and Mutual Insurers</h2>
-    <div class="button-container">
+    <p class="text-2xl mt-52">Empower your <span class="my-gradiant-text">Peer-to-Peer</span>  </p>
+    <p class="text-2xl">protection business</p>
+    <p class="text-base text-blue-500 mt-5 ">INSU.DAO: the Decentralized Organization for the Benefit of P2P Associations and Mutual Insurers</p>
+    <div class="space-x-4 mt-5">
       <button class= "beautiful-button">Get Started</button>
       <button class= "beautiful-button">Earn Yield</button>
     </div>
-    <h3><span class="number-style">60%</span> Lower Coas | <span class="number-style">15%</span> Vield</h3>
-    <div class="my-block">
-      <h1 style="margin-top: 0;">Why Peer-to-Peer <span class="my-gradiant-text"> Protection? </span> </h1>
-      <img class="icon" src={WorldCoumunicationIcon} alt="world comunitication">
-      <p class="data-text">Peer-to-peer protection emerged as a cheaper, quicker and less bureaucratic alternative of regular insurance coverages. It benefits financial inclusion by giving financial protection for individuals, who do not receive coverage from the current system at a reasonable price. The main difference is that in insurance, the insurer guarantees the payment of the claim with their capital. In peer-to-peer there is no such guarantee. Our mission is to offer business intelligence and risk management techniques who enable you to still reach the same level of security for customers.
+    <p class="text-xl mt-7"><span class="number-style">60%</span> Lower Coas | <span class="number-style">15%</span> Vield</p>
+    <div class="bg-white rounded-2xl p-4 mt-20">
+      <p class="text-2xl">Why Peer-to-Peer <span class="my-gradiant-text"> Protection? </span> </p>
+      <img class="mx-auto h-10 w-10" src={WorldCoumunicationIcon} alt="world comunitication">
+      <p class="text-base">Peer-to-peer protection emerged as a cheaper, quicker and less bureaucratic alternative of regular insurance coverages. It benefits financial inclusion by giving financial protection for individuals, who do not receive coverage from the current system at a reasonable price. The main difference is that in insurance, the insurer guarantees the payment of the claim with their capital. In peer-to-peer there is no such guarantee. Our mission is to offer business intelligence and risk management techniques who enable you to still reach the same level of security for customers.
       </p>
-      <img class="v-icon" src={VIcon} alt="V icon">
+      <img class="mx-auto -mb-12" src={VIcon} alt="V icon">
     </div>
     
-    <h1><span class="my-gradiant-text">Cunsulting</span> for Peer-to-Peer</h1>
-    <dev class="grid-block">
-      <div class="my-block" style="margin-right: 0;">
-          <h4>Regulatory consulting</h4>
-          <p class="data-text">We help you understand the relevant regulations in Brazil. Are you willing to expand abroad? We can help you understand regulations for peer-to-peer insurance of the biggest global markets (United States, European Union) and safely navigate in these markets, fulfilling your statutory duties.</p>
+    <p class="text-2xl mt-20"><span class="my-gradiant-text">Cunsulting</span> for Peer-to-Peer</p>
+    <dev class="flex flex-col md:flex-row">
+      <div class="bg-white rounded-2xl p-4 mt-20" >
+          <p class="text-2xl my-gradiant-text">Regulatory consulting</p>
+          <p class="text-base">We help you understand the relevant regulations in Brazil. Are you willing to expand abroad? We can help you understand regulations for peer-to-peer insurance of the biggest global markets (United States, European Union) and safely navigate in these markets, fulfilling your statutory duties.</p>
       </div>
-      <div>
-        <div class="my-block" style="margin-left: 30px;">
-          <h4>Risk management and actuarial</h4>
-          <p class="data-text">We help you understands the risks of your business and how to protect yourself, your stakeholders and your customers from them. How do you calculate the premiums so you have sufficient funds for claims settlement and still stay cheaper than the competition? Use our tools to make your peer-to-peer business more efficient.</p>
+      <div class="md:ml-10">
+        <div class="bg-white rounded-2xl p-4 mt-20" >
+          <p class="text-2xl my-gradiant-text">Risk management and actuarial</p>
+          <p class="text-base">We help you understands the risks of your business and how to protect yourself, your stakeholders and your customers from them. How do you calculate the premiums so you have sufficient funds for claims settlement and still stay cheaper than the competition? Use our tools to make your peer-to-peer business more efficient.</p>
         </div>
-        <div class="my-block" style="margin-top: 30px; margin-left:30px">
-          <h4>Finance and setting up a peer-to-peer insurer</h4>
-          <p class="data-text">We help you order your finances, set up a cheap and efficient payments infrastructure and keep track of your key performance indicators. We offer a step-by-step guidance on how to establish a peer-to-peer insurer in a simple and stable way.</p>
+        <div class="bg-white rounded-2xl p-4 mt-20 md:mt-10">
+          <p class="text-2xl my-gradiant-text">Finance and setting up a peer-to-peer insurer</p>
+          <p class="text-base">We help you order your finances, set up a cheap and efficient payments infrastructure and keep track of your key performance indicators. We offer a step-by-step guidance on how to establish a peer-to-peer insurer in a simple and stable way.</p>
         </div>
       </div>
     </dev>
   
-    <h1 class="request-header">Request a <span class="my-gradiant-text">Free Sample</span></h1>
-    <div class="my-block">
-      <input  type="text" placeholder="field to enter contact details, text or a number" >
-      <button style="font-size: 23px; margin-left: 30px; padding-right: 20px; padding-left:20px">Send</button>
+    <p class="text-2xl mt-20">Request a <span class="my-gradiant-text">Free Sample</span></p>
+    <div class="bg-white rounded-2xl p-4 mt-10">
+      <input class="block w-full  rounded-md  py-1.5 ring-1 px-2 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo text-xs sm:text-sm sm:leading-6" type="text" placeholder="field to enter contact details, text or a number" />
+      <button class="mt-5">Send</button>
     </div>
-    <div class="my-block">
-      <h1 style="margin-top: 0px;">The INSUR.DAO <span class="my-gradiant-text">team</span></h1>
-      <p class="data-text">insurDAO was built by a team of web 3, insurance and AI visionaries.</p>
-      <div class="cards-block">
+    <div class="flex flex-col bg-white p-4 rounded-2xl mt-20">
+      <p class="text-2xl">The INSUR.DAO <span class="my-gradiant-text">team</span></p>
+      <p class="text-base">insurDAO was built by a team of web 3, insurance and AI visionaries.</p>
+      <div class="flex flex-col space-y-10 m-5 mt-10 items-center justify-center align-middle pb-5 md:flex-row  md:space-y-0 md:space-x-10 xl:space-x-52 2xl:space-x-80">
         {#each Profiles as profile }
-        <PersonCard {...profile}/>        
+        <div class="">
+          <PersonCard  {...profile} />        
+        </div>
+        
         {/each}
         
       </div>
     </div>
-    <h1>Experiences and feedback from the <span class="my-gradiant-text">community</span></h1>
-    <div class="gallery">
+    <p class="text-2xl mt-0">Experiences and feedback from the <span class="my-gradiant-text">community</span></p>
+    <div class="flex flex-col  justify-center space-y-10">
       {#each FeedbackCards as card}
-        <div class="feedback-card">
-          <img src={card.img} alt="person profile" />
+        <div class="flex flex-col bg-white rounded-2xl">
+          <img class="h-16 w-16" src={card.img} alt="person profile" />
           <p3 style="font-size: 25px; padding-left: 10px; text-align: left;">{card.name}</p3>
           <div style="display: flex; flex-direction: row;">
-            <img style="width: 60px; height: 60px;" src={QuoteIcon} alt="qoute icon">
+            <img class="h-10 w-10" src={QuoteIcon} alt="qoute icon">
             <p class="feedback">{card.feedback}</p>
           </div>
         </div>
         
       {/each}
     </div>
-    <h1 style="text-align: left; padding-left:30px ;"><span class="my-gradiant-text">Join</span> the Growing Community</h1>
-    <p style="font-size:14px; text-align: left; padding-left: 30px; margin-top: -30px;">By signing up you agree to our <a href="https://www.google.com" target="_blank" rel="noreferrer">Terms & Conditions</a></p>
-    <p class="data-text" style="margin: 50px; margin-top:40px; text-align: left;">The insurDAO community of associations, insurers, developers, claims adjusters and risk managers is constantly growing.</p>
-    <p class="data-text" style="margin: 50px; margin-top: -50px; text-align: left;">Our aim is to improve the world of insurance, and make easy, affordable and simple coverage accessible to everyone. Join us to shape the insurance of tomorrow.</p>
-    <div style="display: flex; padding-left:30px;">
-      <input style="width: 400px;" type='text' placeholder='Name'>
-      <input style="width: 400px; margin-left:20px;margin-right: 30px;" type='text' placeholder='EMail'>
-      <button class='beautiful-button' style="height: 60px; width: 200px; ">Subscribe!</button>
+    <p class="text-2xl mt-20"><span class="my-gradiant-text">Join</span> the Growing Community</p>
+    <p class="text-xs">By signing up you agree to our <a href="https://www.google.com" target="_blank" rel="noreferrer">Terms & Conditions</a></p>
+    <p class="text-base mt-10">The insurDAO community of associations, insurers, developers, claims adjusters and risk managers is constantly growing.</p>
+    <p class="text-base" >Our aim is to improve the world of insurance, and make easy, affordable and simple coverage accessible to everyone. Join us to shape the insurance of tomorrow.</p>
+    <div class="flex flex-col">
+      <div class="flex flex-col mt-5">
+        <input class="w-full rounded-lg p-2.5" type='text' placeholder='Name'>
+        <input type='text'  id="email"  class="block mt-5 rounded-lg w-full p-2.5" placeholder='EMail'>
+      </div>
+      <button class='beautiful-button mt-10 mx-7' >Subscribe!</button>
     </div>
-    <div style="display: flex; margin-top: 100px;">
-      <h1 style="text-align: left; padding-left:30px; margin-top:0;">Get the INSUR.DAO <span class='my-gradiant-text'>Token</span></h1>
-      <button class="beautiful-button" style="height: 60px; width: 200px; margin-left: 230px; ">Connect Wallet</button>
+    <div class="flex mt-20 justify-between align-middle" >
+      <p class="text-xl mt-1">Get the INSUR.DAO <span class='my-gradiant-text'>Token</span></p>
+      <button class="beautiful-button text-xs">Connect Wallet!</button>
     </div>
  
     
@@ -109,6 +114,7 @@
     }
     .v-icon{
       margin-bottom: -50px;
+      
     }
    
   
@@ -132,13 +138,11 @@
     .beautiful-button{
       color:aliceblue;
       background: linear-gradient(to right, #0a75cc, #930bc9);
-      font-size: 20px;
-      margin-right: 80px;
-      width: 180px;
+      
     }
     .my-block{
       background-color: white;
-      padding: 20px;
+      padding: 2px;
       
       margin-left: 60px;
       margin-right: 60px;
@@ -185,12 +189,7 @@
       padding-left: 70px;
       margin-bottom:-60px;
     }
-    input{
-      width: 800px;
-      height: 50px;
-      font-size: 25px;
-      border-radius: 7px;
-    }
+  
     .cards-block{
       display:flex;
       flex-direction: row;
