@@ -56,10 +56,10 @@
       <input class="block w-full  rounded-md  py-1.5 ring-1 px-2 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo text-xs md:text-2xl 2xl:text-4xl" type="text" placeholder="field to enter contact details, text or a number" />
       <button class="mt-5 md:text-2xl">Send</button>
     </div>
-    <div class="flex flex-col bg-white p-4 rounded-2xl mt-20 md:mt-52 lg:mt-72">
+    <div class="flex flex-col bg-white p-4 rounded-2xl mt-20  lg:mt-72">
       <p class="header">The INSUR.DAO <span class="my-gradiant-text">team</span></p>
       <p class="data">insurDAO was built by a team of web 3, insurance and AI visionaries.</p>
-      <div class="flex flex-col space-y-10 m-5 mt-10 items-center justify-center align-middle pb-5 md:flex-row  md:space-y-0 md:space-x-20 xl:space-x-52 2xl:space-x-80">
+      <div class="flex flex-col  m-5 mt-10 items-center justify-center align-middle pb-5 md:flex-row flex-wrap  ">
         {#each Profiles as profile }
         <div class="">
           <PersonCard  {...profile} />        
@@ -70,9 +70,9 @@
       </div>
     </div>
     <p class="header mt-10 md:mt-52">Experiences and feedback from the <span class="my-gradiant-text">community</span></p>
-    <div class="flex flex-col  justify-center space-y-10 md:flex-row items-center md:mt-10 md:space-y-0 md space-x-10">
+    <div class="flex flex-col justify-start items-start flex-wrap  md:justify-center md  md:flex-row md:items-center md:mt-10 ">
       {#each FeedbackCards as card}
-        <div class="flex flex-col bg-white rounded-2xl">
+        <div class="flex flex-col w-full m-2 p-4 bg-white rounded-3xl md:m-5 md:w-auto md:px-20">
           <img class="h-16 w-16" src={card.img} alt="person profile" />
           <p3 style="font-size: 25px; padding-left: 10px; text-align: left;">{card.name}</p3>
           <div style="display: flex; flex-direction: row;">
@@ -84,19 +84,19 @@
       {/each}
     </div>
     <p class="header mt-20 md:mt-52 xl:mt-72"><span class="my-gradiant-text">Join</span> the Growing Community</p>
-    <p class="text-xs">By signing up you agree to our <a href="https://www.google.com" target="_blank" rel="noreferrer">Terms & Conditions</a></p>
+    <p class="text-xs xl:mt-2 md:text-sm xl:text-lg">By signing up you agree to our <a href="https://www.google.com" target="_blank" rel="noreferrer">Terms & Conditions</a></p>
     <p class="data mt-10">The insurDAO community of associations, insurers, developers, claims adjusters and risk managers is constantly growing.</p>
     <p class="data" >Our aim is to improve the world of insurance, and make easy, affordable and simple coverage accessible to everyone. Join us to shape the insurance of tomorrow.</p>
     <div class="flex flex-col">
-      <div class="flex flex-col space-y-5 mt-5 md:space-y-0 md:text-2xl md:flex-row space-x-10 lg" >
+      <div class="flex flex-col space-y-5 mt-5 md:space-y-0 md:text-2xl md:flex-row md:space-x-10 lg" >
         <input class="w-full rounded-lg p-2.5" type='text' placeholder='Name'>
         <input type='text'  id="email"  class=" rounded-lg w-full p-2.5" placeholder='EMail'>
       </div>
       <button class='beautiful-button font-oswald mt-10 mx-7 md:text-xl' >Subscribe!</button>
     </div>
     <div class="flex mt-20 justify-between align-middle" >
-      <p class="text-xl mt-1">Get the INSUR.DAO <span class='my-gradiant-text'>Token</span></p>
-      <button class="beautiful-button text-xs">Connect Wallet!</button>
+      <p class="header mt-1">Get the INSUR.DAO <span class='my-gradiant-text'>Token</span></p>
+      <button class="beautiful-button font-oswald text-xs md:text-xl xl:text-2xl ">Connect Wallet!</button>
     </div>
  
     

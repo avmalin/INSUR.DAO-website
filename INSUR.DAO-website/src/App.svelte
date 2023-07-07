@@ -1,6 +1,6 @@
 <script>
   import HomePage from "./HomePage.svelte";
-  import Logo from "./assets/svelte.svg";
+  import Logo from "./Elements/INSURDAO  logo.png";
   import TwitterIcon from "./Elements/Twitter Icon.png";
   import LinkedinIcon from "./Elements/Linked In Icon.png";
   import DescordIcon from "./Elements/Discord Icon.png";
@@ -47,7 +47,7 @@
       <img class="h-20 w-20" src={Logo} alt="logo" />
       <p class="text-right text-3xl m-4">INSUR·DAO</p>
     </div>
-    <p class="mt-4">©2023 All Right Reserved. INSUR.DAO, Israel.</p>
+    <p class="mt-4 md:text-xl xl:text-2xl">©2023 All Right Reserved. INSUR.DAO, Israel.</p>
   </div>
 </main>
 

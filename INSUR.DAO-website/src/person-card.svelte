@@ -9,12 +9,12 @@
 </script>
 
 
-<dev class="flex flex-col justify-center items-center bg-white">
-    <img class="w-24 h-24"src={img} alt='{name} image'>
-    <p class="text-xl">{name}</p>
-    <p class="text-lg">{role}</p>
+<dev class="flex flex-col justify-center items-center bg-white m-3 md:m-16 xl:">
+    <img class="w-24 h-24 rounded-full md:w-28 md:h-28 xl:w-40 xl:h-40"src={img} alt='{name} image'>
+    <p class="text-xl xl:text-2xl">{name}</p>
+    <p class="text-lg xl:text-xl">{role}</p>
     <a href={inUrl} target="_blank" rel="noreferrer">
-            <img class="w-10 h-10 rounded-3xl p-1 bg-linked-in  "src={linkedInLogo} alt="linked in logo">
+            <img class="w-10 h-10 rounded-3xl p-1 bg-linked-in 2xl:mt-1  "src={linkedInLogo} alt="linked in logo">
     </a>
 </dev>
     
