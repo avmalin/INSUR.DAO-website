@@ -1,5 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@font-face {
+  font-family: Oswald;
+  src: url('fonts/Oswald/static/Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Oswald-ExtraLight;
+  src: url('fonts/Oswald/static/Oswald-ExtraLight.ttf') format('truetype');
+}
+@layer components {
+  .header{
+    @apply  text-2xl md:mt-5 md:text-4xl xl:text-6xl font-oswald;
+  }
+  .data{
+    @apply  font-oswald-extra-light text-base md:p-5 lg:p-10 leading-relaxed  md:text-2xl xl:text-3xl ;
+    
+  }
+
+  .my-block{
+    @apply bg-white rounded-2xl   mt-20 md:p-3  font-oswald;
+  }
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:  Oswald-ExtraLight, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,6 +36,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
 }
 
 a {
@@ -29,21 +54,16 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: #213547;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-.card {
-  padding: 2em;
-}
+
 
 #app {
-  max-width: 1280px;
+  
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -53,7 +73,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: oswald;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
