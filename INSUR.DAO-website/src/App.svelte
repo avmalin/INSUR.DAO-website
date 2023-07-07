@@ -13,7 +13,7 @@
     <div class="flex  justify-between items-center top-3 left-5 right-5 mx-5 absolute">
       <div class="flex left-0">
         <img class="w-10 h-10" src={Logo} alt="logo" />
-        <p class="text-1xl mt-2 ml-1">INSUR·DAO</p>
+        <p class="text-1xl mt-2 ml-1 md:text-3xl md:mt-1">INSUR·DAO</p>
       </div>
       <p class="hidden lg:block mx-auto  text-center">
         Governace . Join the Community . Contact Us

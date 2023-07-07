@@ -5,10 +5,16 @@ export default {
     "./src/**/*.{html,js,svelte,ts}",
   ],
   theme: {
-    extend: {},
-    colorss:{
-      'linked-in': '#0177b5',
-    }
+    extend: {
+      colors:{
+        'linked-in': '#0177b5',
+      
+      },
+      fontFamily:{
+        'oswald':['Oswald'],
+        'oswald-extra-light':['Oswald-ExtraLight'],
+      }
+  },
   },
   plugins: [],
 }
