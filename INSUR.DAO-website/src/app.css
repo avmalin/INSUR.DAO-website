@@ -19,7 +19,13 @@
   }
 
   .my-block{
-    @apply bg-white rounded-2xl   mt-20 md:p-3  font-oswald;
+    @apply bg-white rounded-2xl   mt-20 md:p-3  font-oswald ;
+  }
+  .my-gradiant-text{
+    background: linear-gradient(to right, #0a75cc, #930bc9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
   }
 }
 :root {
